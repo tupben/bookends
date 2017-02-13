@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+	<style>
+		body{
+			font-family: "Times New Roman";
+			text-align: center;
+			font-size: 36px;
+			margin: 5px 0px;
+			user-select: none;
+		}
+		.container{
+			max-width:470px;
+			height:700px;
+			margin: 0 auto;
+			border: 2px solid #ADD8E6;
+
+		}
+
+		.topdiv {
+			height: 380px;
+			max-width: 400px;
+            margin: 0 auto;
+            padding: 100px 0;
+		}
+
+		.bottomdiv{
+			max-width: 400px;
+			margin: 0 auto;
+		}
+  
+		.button {
+			background: none;
+		    border: 2px solid #ADD8E6;
+		    color: black;
+		    padding: 12px 25px;
+		    text-align: center;
+			font-family: "Times New Roman";
+			font-style: italic;
+		    display: inline-block;
+		    font-size: 20px;
+		    cursor: pointer;
+		}
+
+		.button:hover{
+			background-color: #ADD8E6;
+		}
+
+		.field{
+        	font-size: 18px;
+        	font-family: "Times New Roman";
+        	width: 95%;
+        	text-align: left;
+		    border: 2px solid #ADD8E6;
+
+
+		}
+
+		@media (max-width: 600px){
+			.container{
+				width: 95%;
+			}
+		}
+
+		@media (max-height: 700px){
+			.container{
+				height: 95%;
+			}
+			.topdiv{
+				height:20%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header></header>
+	<div class = "container">
+		<div class = "topdiv">
+          	<i>find a book</i>
+          	<form method="get" id="form1" action="search.html">
+          	<br><br>          
+          	<input type="text" class="field" name="bookname"<br><br>
+          	<br>
+          	<input type="submit" form="form1" class="button" value="search">
+          	</form>
+        </div>
+		<div class="bottomdiv">
+			<i>bookends</i>
+		</div>
+	</div>
+</body>
